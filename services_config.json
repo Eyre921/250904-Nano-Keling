@@ -34,7 +34,7 @@
       "id": "kling_image2video_v1",
       "name": "可灵 AI (首尾帧生视频)",
       "api_endpoint_base": "https://api-beijing.klingai.com",
-      "default_model": "kling-v1",
+      "default_model": "kling-v2-1",
       "access_key": "AMM8mCR8Q8rC48PPEfNeKLHFfbmQJGAA",
       "secret_key": "QHTNTLLLyd3HfGLTFrm4T3QLmAARCN8F",
       "auth": {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Button, Select, Input, Row, Col, Typography, message, Progress, Spin } from 'antd';
 import { ArrowLeftOutlined, ScissorOutlined, CheckCircleOutlined } from '@ant-design/icons';
 
@@ -8,11 +8,21 @@ const { Option } = Select;
 const BatchImageProcess = ({ batchImages, services, onProcess, onBack }) => {
   const [processing, setProcessing] = useState(false);
   const [processedImages, setProcessedImages] = useState([]);
-  const [selectedService, setSelectedService] = useState('');
+  const [selectedService, setSelectedService] = useState('nano_banana_remove_bg_v1'); // 默认选择Nano Banana
   const [apiKey, setApiKey] = useState('');
   const [customPrompt, setCustomPrompt] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
+
+  // 自动加载默认服务的API key
+  useEffect(() => {
+    if (selectedService) {
+      const service = services.find(s => s.id === selectedService);
+      if (service && service.api_key) {
+        setApiKey(service.api_key);
+      }
+    }
+  }, [selectedService, services]);
 
   const handleServiceChange = (serviceId) => {
     setSelectedService(serviceId);

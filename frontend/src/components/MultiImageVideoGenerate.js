@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Button, Row, Col, Typography, message, Input, Select, Upload, Space, Tag, Modal } from 'antd';
 import { PlayCircleOutlined, BookOutlined, UploadOutlined } from '@ant-design/icons';
 import axios from 'axios';
@@ -10,12 +10,15 @@ const { Dragger } = Upload;
 
 const MultiImageVideoGenerate = ({ services, prompts, onGenerate, onPromptUpdate }) => {
   const [imageList, setImageList] = useState([]);
-  const [selectedService, setSelectedService] = useState('');
-  const [accessKey, setAccessKey] = useState('AMM8mCR8Q8rC48PPEfNeKLHFfbmQJGAA');
-  const [secretKey, setSecretKey] = useState('QHTNTLLLyd3HfGLTFrm4T3QLmAARCN8F');
-  const [prompt, setPrompt] = useState('');
+  // 默认选择首尾帧生视频服务
+  const [selectedService, setSelectedService] = useState('kling_image2video_v1');
+  const [accessKey, setAccessKey] = useState('');
+  const [secretKey, setSecretKey] = useState('');
+  // 默认使用商品展示旋转效果提示词
+  const [prompt, setPrompt] = useState('产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀');
   const [negativePrompt, setNegativePrompt] = useState('');
-  const [model, setModel] = useState('');
+  // 默认选择Kling V2.1模型（与服务配置保持一致）
+  const [model, setModel] = useState('kling-v2-1');
   const [duration, setDuration] = useState('5');
 
   // 移除生成模式选择，使用默认的pro模式
@@ -23,6 +26,18 @@ const MultiImageVideoGenerate = ({ services, prompts, onGenerate, onPromptUpdate
   const [previewVisible, setPreviewVisible] = useState(false);
   const [previewImage, setPreviewImage] = useState('');
   const [promptModalVisible, setPromptModalVisible] = useState(false);
+
+  // 当选择服务时，自动从服务配置中读取API key和默认模型
+  useEffect(() => {
+    if (selectedService && services) {
+      const service = services.find(s => s.id === selectedService);
+      if (service) {
+        setAccessKey(service.access_key || '');
+        setSecretKey(service.secret_key || '');
+        setModel(service.default_model || 'kling-v2-1');
+      }
+    }
+  }, [selectedService, services]);
 
 
   // 上传前检查
@@ -302,7 +317,7 @@ const MultiImageVideoGenerate = ({ services, prompts, onGenerate, onPromptUpdate
                   <Text strong>视频生成服务：</Text>
                   <Select
                     style={{ width: '100%', marginTop: 4 }}
-                    placeholder="选择视频生成服务"
+                    placeholder="选择视频生成服务（支持单图或多图生成）"
                     value={selectedService}
                     onChange={setSelectedService}
                   >

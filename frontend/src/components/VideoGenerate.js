@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Button, Row, Col, Typography, message, Input, Select, Modal, List } from 'antd';
 import { ArrowLeftOutlined, PlayCircleOutlined, PlusOutlined, BookOutlined } from '@ant-design/icons';
 import axios from 'axios';
@@ -8,15 +8,30 @@ const { TextArea } = Input;
 const { Option } = Select;
 
 const VideoGenerate = ({ startImage, endImage, services, prompts, onGenerate, onBack, onPromptUpdate }) => {
-  const [selectedService, setSelectedService] = useState('');
-  const [accessKey, setAccessKey] = useState('AMM8mCR8Q8rC48PPEfNeKLHFfbmQJGAA');
-  const [secretKey, setSecretKey] = useState('QHTNTLLLyd3HfGLTFrm4T3QLmAARCN8F');
-  const [prompt, setPrompt] = useState('');
-  const [model, setModel] = useState('kling-v1');
+  // 默认选择首尾帧生视频服务
+  const [selectedService, setSelectedService] = useState('kling_image2video_v1');
+  const [accessKey, setAccessKey] = useState('');
+  const [secretKey, setSecretKey] = useState('');
+  // 默认使用商品展示旋转效果提示词
+  const [prompt, setPrompt] = useState('产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀');
+  // 默认选择Kling V2.1模型（与服务配置保持一致）
+  const [model, setModel] = useState('kling-v2-1');
   const [generating, setGenerating] = useState(false);
   const [promptModalVisible, setPromptModalVisible] = useState(false);
   const [newPromptName, setNewPromptName] = useState('');
   const [newPromptContent, setNewPromptContent] = useState('');
+
+  // 当选择服务时，自动从服务配置中读取API key和默认模型
+  useEffect(() => {
+    if (selectedService && services) {
+      const service = services.find(s => s.id === selectedService);
+      if (service) {
+        setAccessKey(service.access_key || '');
+        setSecretKey(service.secret_key || '');
+        setModel(service.default_model || 'kling-v2-1');
+      }
+    }
+  }, [selectedService, services]);
 
   const handleGenerate = async () => {
     if (!selectedService) {

@@ -1,0 +1,83 @@
+{
+  "image_processing_services": [
+    {
+      "id": "nano_banana_remove_bg_v1",
+      "name": "Nano Banana (Gemini 抠图)",
+      "api_endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent",
+      "default_model": "gemini-2.5-flash-image-preview",
+      "api_key": "AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30",
+      "auth": {
+        "type": "api_key_query_param",
+        "key_name": "key"
+      },
+      "payload_template": {
+        "contents": [
+          {
+            "parts": [
+              {
+                "text": "Please remove the background from this product image and return the processed image with pure white background. Make sure the background is completely white (#FFFFFF) and the product edges are clean and smooth. Do not provide text description, only return the processed image data."
+              },
+              {
+                "inline_data": {
+                  "mime_type": "{{mime_type}}",
+                  "data": "{{base64_image}}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "video_generation_services": [
+    {
+      "id": "kling_image2video_v1",
+      "name": "可灵 AI (首尾帧生视频)",
+      "api_endpoint_base": "https://api-beijing.klingai.com",
+      "default_model": "kling-v1",
+      "access_key": "AMM8mCR8Q8rC48PPEfNeKLHFfbmQJGAA",
+      "secret_key": "QHTNTLLLyd3HfGLTFrm4T3QLmAARCN8F",
+      "auth": {
+        "type": "jwt_bearer_header",
+        "header_name": "Authorization"
+      },
+      "endpoints": {
+        "create_task": "/v1/videos/image2video",
+        "query_task": "/v1/videos/image2video/"
+      },
+      "payload_template": {
+        "model_name": "{{model_name}}",
+        "prompt": "{{prompt}}",
+        "image": "{{image}}",
+        "image_tail": "{{image_tail}}",
+        "duration": "{{duration}}",
+        "mode": "{{mode}}"
+      }
+    },
+    {
+      "id": "kling_multi_image2video_v1",
+      "name": "可灵 AI (多图参考生视频)",
+      "api_endpoint_base": "https://api-beijing.klingai.com",
+      "default_model": "kling-v1-6",
+      "access_key": "AMM8mCR8Q8rC48PPEfNeKLHFfbmQJGAA",
+      "secret_key": "QHTNTLLLyd3HfGLTFrm4T3QLmAARCN8F",
+      "auth": {
+        "type": "jwt_bearer_header",
+        "header_name": "Authorization"
+      },
+      "endpoints": {
+        "create_task": "/v1/videos/image2video",
+        "query_task": "/v1/videos/image2video/"
+      },
+      "payload_template": {
+        "model_name": "{{model_name}}",
+        "prompt": "{{prompt}}",
+        "image": "{{image}}",
+        "image_tail": "{{image_tail}}",
+        "duration": "{{duration}}",
+        "mode": "{{mode}}",
+        "negative_prompt": "{{negative_prompt}}"
+      }
+    }
+  ]
+}

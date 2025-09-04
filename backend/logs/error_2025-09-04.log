@@ -1,0 +1,684 @@
+2025-09-04 12:22:54 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 0.00s - Error: process_image() got an unexpected keyword argument 'base64_image'
+2025-09-04 12:22:54 - ai_video_generator.error - ERROR - Error in image processing: process_image() got an unexpected keyword argument 'base64_image'
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 80, in process_image_endpoint
+    processed_image = process_image(
+                      ^^^^^^^^^^^^^^
+TypeError: process_image() got an unexpected keyword argument 'base64_image'
+2025-09-04 12:23:21 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 0.00s - Error: process_image() got an unexpected keyword argument 'base64_image'
+2025-09-04 12:23:21 - ai_video_generator.error - ERROR - Error in image processing: process_image() got an unexpected keyword argument 'base64_image'
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 80, in process_image_endpoint
+    processed_image = process_image(
+                      ^^^^^^^^^^^^^^
+TypeError: process_image() got an unexpected keyword argument 'base64_image'
+2025-09-04 12:25:00 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 17.83s - Error: 1 validation error for ImageProcessResponse
+image_base64
+  Field required [type=missing, input_value={'processed_image': ('iVB...mime_type': 'image/png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+2025-09-04 12:25:01 - ai_video_generator.error - ERROR - Error in image processing: 1 validation error for ImageProcessResponse
+image_base64
+  Field required [type=missing, input_value={'processed_image': ('iVB...mime_type': 'image/png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 90, in process_image_endpoint
+    return ImageProcessResponse(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\pydantic\main.py", line 164, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ImageProcessResponse
+image_base64
+  Field required [type=missing, input_value={'processed_image': ('iVB...mime_type': 'image/png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+2025-09-04 12:27:30 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 10.16s - Error: 1 validation error for ImageProcessResponse
+image_base64
+  Field required [type=missing, input_value={'processed_image': ('iVB...mime_type': 'image/png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+2025-09-04 12:27:30 - ai_video_generator.error - ERROR - Error in image processing: 1 validation error for ImageProcessResponse
+image_base64
+  Field required [type=missing, input_value={'processed_image': ('iVB...mime_type': 'image/png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 90, in process_image_endpoint
+    return ImageProcessResponse(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\pydantic\main.py", line 164, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ImageProcessResponse
+image_base64
+  Field required [type=missing, input_value={'processed_image': ('iVB...mime_type': 'image/png'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+2025-09-04 13:45:12 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 23.31s - Error: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+2025-09-04 13:45:12 - ai_video_generator.error - ERROR - Error in image processing: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 83, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 203, in process_image
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+2025-09-04 13:51:23 - ai_video_generator.api - ERROR - API Response: /video-generate - 429 - 82.46s - Error: Code 429: 处理失败: AI服务商提示资源包已用尽或过期。
+2025-09-04 13:51:23 - ai_video_generator.error - ERROR - Error in video generation: Code 429: 处理失败: AI服务商提示资源包已用尽或过期。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 126, in generate_video_endpoint
+    task_id = create_video_task(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 268, in create_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 429: 处理失败: AI服务商提示资源包已用尽或过期。
+2025-09-04 13:54:05 - ai_video_generator.api - ERROR - API Response: /video-status/792458019094814807 - 401 - 2.55s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 13:54:05 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 165, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 320, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 13:54:08 - ai_video_generator.api - ERROR - API Response: /video-status/792458019094814807 - 401 - 2.37s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 13:54:08 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 165, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 320, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 13:54:42 - ai_video_generator.api - ERROR - API Response: /video-status/792458019094814807 - 401 - 2.63s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 13:54:42 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 165, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 320, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 20:47:04 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 3.38s - Error: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:47:04 - ai_video_generator.error - ERROR - Error in image processing: Code 500: AI服务未返回处理后的图像
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 222, in process_image
+    raise AIServiceError(500, "AI服务未返回处理后的图像")
+app.services.AIServiceError: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:47:25 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 3.28s - Error: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:47:25 - ai_video_generator.error - ERROR - Error in image processing: Code 500: AI服务未返回处理后的图像
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 222, in process_image
+    raise AIServiceError(500, "AI服务未返回处理后的图像")
+app.services.AIServiceError: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:49:55 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 2.82s - Error: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:49:55 - ai_video_generator.error - ERROR - Error in image processing: Code 500: AI服务未返回处理后的图像
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 222, in process_image
+    raise AIServiceError(500, "AI服务未返回处理后的图像")
+app.services.AIServiceError: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:50:32 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 2.91s - Error: Code 500: AI服务未返回处理后的图像
+2025-09-04 20:50:32 - ai_video_generator.error - ERROR - Error in image processing: Code 500: AI服务未返回处理后的图像
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 222, in process_image
+    raise AIServiceError(500, "AI服务未返回处理后的图像")
+app.services.AIServiceError: Code 500: AI服务未返回处理后的图像
+2025-09-04 21:35:30 - ai_video_generator.api - ERROR - API Response: /video-generate - 401 - 3.50s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 21:35:30 - ai_video_generator.error - ERROR - Error in video generation: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 128, in generate_video_endpoint
+    task_id = create_video_task(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 415, in create_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 21:37:25 - ai_video_generator.api - ERROR - API Response: /video-generate - 401 - 4.99s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 21:37:25 - ai_video_generator.error - ERROR - Error in video generation: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 128, in generate_video_endpoint
+    task_id = create_video_task(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 415, in create_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 21:39:43 - ai_video_generator.api - ERROR - API Response: /video-generate - 401 - 2.86s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 21:39:43 - ai_video_generator.error - ERROR - Error in video generation: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 128, in generate_video_endpoint
+    task_id = create_video_task(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 415, in create_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-04 21:43:48 - ai_video_generator.api - ERROR - API Response: /video-status/792575359891435590 - 500 - 6.24s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 21:43:48 - ai_video_generator.error - ERROR - Error in video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 462, in query_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 464, in query_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 21:44:13 - ai_video_generator.api - ERROR - API Response: /video-status/792575359891435590 - 500 - 3.26s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 21:44:13 - ai_video_generator.error - ERROR - Error in video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 462, in query_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 464, in query_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 21:46:14 - ai_video_generator.api - ERROR - API Response: /video-status/792575359891435590 - 500 - 3.22s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 21:46:14 - ai_video_generator.error - ERROR - Error in video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 462, in query_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 464, in query_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792575359891435590 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:02:56 - ai_video_generator.api - ERROR - API Response: /video-status/792580464870952999 - 500 - 3.23s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:02:56 - ai_video_generator.error - ERROR - Error in video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 462, in query_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 464, in query_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:03:31 - ai_video_generator.api - ERROR - API Response: /video-status/792580464870952999 - 500 - 3.19s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:03:31 - ai_video_generator.error - ERROR - Error in video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 462, in query_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 464, in query_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792580464870952999 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:15:03 - ai_video_generator.api - ERROR - API Response: /multi-image-video-generate - 404 - 0.00s - Error: Code 404: 未找到服务配置: test
+2025-09-04 22:15:03 - ai_video_generator.error - ERROR - Error in multi-image video generation: Code 404: 未找到服务配置: test
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 270, in generate_multi_image_video_endpoint
+    task_id = create_multi_image_video_task(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 241, in create_multi_image_video_task
+    raise AIServiceError(404, f"未找到服务配置: {service_id}")
+app.services.AIServiceError: Code 404: 未找到服务配置: test
+2025-09-04 22:19:06 - ai_video_generator.api - ERROR - API Response: /multi-image-video-status/792585045289996334 - 500 - 3.47s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:19:06 - ai_video_generator.error - ERROR - Error in multi-image video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 335, in query_multi_image_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 314, in get_multi_image_video_status_endpoint
+    result = query_multi_image_video_task(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 337, in query_multi_image_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:20:33 - ai_video_generator.api - ERROR - API Response: /multi-image-video-status/792585045289996334 - 500 - 3.15s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:20:33 - ai_video_generator.error - ERROR - Error in multi-image video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 335, in query_multi_image_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 314, in get_multi_image_video_status_endpoint
+    result = query_multi_image_video_task(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 337, in query_multi_image_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:21:07 - ai_video_generator.api - ERROR - API Response: /multi-image-video-status/792585045289996334 - 500 - 3.43s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:21:07 - ai_video_generator.error - ERROR - Error in multi-image video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 335, in query_multi_image_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 314, in get_multi_image_video_status_endpoint
+    result = query_multi_image_video_task(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 337, in query_multi_image_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792585045289996334 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:28:17 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 18.25s - Error: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+2025-09-04 22:28:17 - ai_video_generator.error - ERROR - Error in image processing: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 204, in process_image
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+2025-09-04 22:28:53 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 35.39s - Error: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+2025-09-04 22:28:53 - ai_video_generator.error - ERROR - Error in image processing: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 204, in process_image
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 500: 处理失败: AI服务提供商服务器内部错误，请稍后再试。
+2025-09-04 22:32:10 - ai_video_generator.api - ERROR - API Response: /image-process - 500 - 64.72s - Error: Code 500: 处理失败: AI服务提供商服务器内部错误。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。
+2025-09-04 22:32:10 - ai_video_generator.error - ERROR - Error in image processing: Code 500: 处理失败: AI服务提供商服务器内部错误。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 85, in process_image_endpoint
+    processed_image_data, processed_mime_type = process_image(
+                                                ^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 211, in process_image
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 500: 处理失败: AI服务提供商服务器内部错误。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。
+2025-09-04 22:45:47 - ai_video_generator.api - ERROR - API Response: /multi-image-video-status/792591775650562096 - 500 - 4.01s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591775650562096 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:45:47 - ai_video_generator.error - ERROR - Error in multi-image video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591775650562096 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591775650562096 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 342, in query_multi_image_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591775650562096 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 314, in get_multi_image_video_status_endpoint
+    result = query_multi_image_video_task(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 344, in query_multi_image_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591775650562096 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:47:26 - ai_video_generator.api - ERROR - API Response: /multi-image-video-status/792591880940171301 - 500 - 3.95s - Error: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591880940171301 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2025-09-04 22:47:26 - ai_video_generator.error - ERROR - Error in multi-image video status query: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591880940171301 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591880940171301 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 342, in query_multi_image_video_task
+    response = requests.get(url, headers=headers, timeout=30)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\.venv\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591880940171301 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 314, in get_multi_image_video_status_endpoint
+    result = query_multi_image_video_task(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 344, in query_multi_image_video_task
+    raise AIServiceError(500, f"网络请求失败: {str(e)}")
+app.services.AIServiceError: Code 500: 网络请求失败: HTTPSConnectionPool(host='api-beijing.klingai.com', port=443): Max retries exceeded with url: /v1/videos/image2video/792591880940171301 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))

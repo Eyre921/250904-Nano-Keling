@@ -1,0 +1,134 @@
+.app-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 24px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.app-content {
+  padding: 24px;
+  min-height: calc(100vh - 80px);
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps-card {
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.step-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* 滚动优化样式 */
+.unified-interface {
+  scroll-behavior: smooth;
+}
+
+.section-card {
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.section-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.section-card .ant-card-head {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.section-card .ant-card-body {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* 动画效果 */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 16px;
+    height: 64px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .header-actions {
+    flex-direction: row;
+    gap: 12px;
+  }
+  
+  .app-content {
+    padding: 16px;
+  }
+  
+  .step-content {
+    padding: 16px;
+  }
+  
+  .section-card {
+    margin-bottom: 16px;
+  }
+}

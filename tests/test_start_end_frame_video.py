@@ -165,7 +165,7 @@ def test_video_generation():
     print("=" * 50)
     
     # 轮询状态
-    max_attempts = 30  # 最多查询30次（5分钟，每次间隔10秒）
+    max_attempts = 50  # 最多查询50次（每次间隔10秒）
     attempt = 0
     
     while attempt < max_attempts:

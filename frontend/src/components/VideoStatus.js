@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Card, Button, Typography, message, Progress, Alert, Spin } from 'antd';
+import { Card, Button, Typography, message, Alert, Spin } from 'antd';
 import { ArrowLeftOutlined, ReloadOutlined, DownloadOutlined, RedoOutlined } from '@ant-design/icons';
 import axios from 'axios';
 
@@ -8,7 +8,6 @@ const { Title, Text, Paragraph } = Typography;
 const VideoStatus = ({ taskData, onReset, onBack }) => {
   const [status, setStatus] = useState('processing');
   const [videoUrl, setVideoUrl] = useState('');
-  const [progress, setProgress] = useState(0);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [autoRefresh, setAutoRefresh] = useState(true);
@@ -30,17 +29,14 @@ const VideoStatus = ({ taskData, onReset, onBack }) => {
       
       if (data.status === 'succeed' && data.video_url) {
         setVideoUrl(data.video_url);
-        setProgress(100);
         setAutoRefresh(false);
         message.success('视频生成完成！');
       } else if (data.status === 'failed') {
         setError(data.error || '视频生成失败');
         setAutoRefresh(false);
         message.error('视频生成失败');
-      } else if (data.status === 'processing') {
-        // 模拟进度，实际进度可能需要从API获取
-        setProgress(prev => Math.min(prev + Math.random() * 10, 90));
       }
+      // 移除虚假进度条逻辑，只根据实际状态显示
     } catch (error) {
       console.error('查询状态失败:', error);
       const errorMsg = error.response?.data?.detail || '查询状态失败';
@@ -89,33 +85,49 @@ const VideoStatus = ({ taskData, onReset, onBack }) => {
           type: 'info',
           title: '正在生成视频...',
           description: '请耐心等待，视频生成通常需要1-3分钟。系统每10秒自动查询一次状态，如遇临时错误会自动重试。',
-          showProgress: true
+          showSpinner: true
         };
       case 'succeed':
         return {
           type: 'success',
           title: '视频生成完成！',
           description: '您的商品展示视频已成功生成',
-          showProgress: false
+          showSpinner: false
         };
       case 'failed':
         return {
           type: 'error',
           title: '视频生成失败',
           description: error || '生成过程中出现错误，请重试',
-          showProgress: false
+          showSpinner: false
         };
       default:
         return {
           type: 'info',
           title: '准备中...',
           description: '正在初始化视频生成任务',
-          showProgress: false
+          showSpinner: true
         };
     }
   };
 
   const statusInfo = getStatusInfo();
+
+  // 如果没有任务数据，显示空状态（简洁文本，无大图标）
+  if (!taskData) {
+    return (
+      <div style={{ maxWidth: 800, margin: '0 auto' }}>
+        <Card>
+          <div style={{ textAlign: 'center', padding: '28px 12px' }}>
+            <Title level={4} type="secondary">暂无视频生成任务</Title>
+            <Text type="secondary">
+              完成图片处理和首尾帧选择后，在视频生成区域创建任务
+            </Text>
+          </div>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -143,18 +155,16 @@ const VideoStatus = ({ taskData, onReset, onBack }) => {
             description={statusInfo.description}
             type={statusInfo.type}
             showIcon
-            style={{ marginBottom: statusInfo.showProgress ? 16 : 0 }}
+            style={{ marginBottom: statusInfo.showSpinner ? 16 : 0 }}
           />
           
-          {statusInfo.showProgress && (
-            <Progress 
-              percent={Math.round(progress)} 
-              status={status === 'processing' ? 'active' : 'normal'}
-              strokeColor={{
-                '0%': '#667eea',
-                '100%': '#764ba2',
-              }}
-            />
+          {statusInfo.showSpinner && (
+            <div style={{ textAlign: 'center', padding: '20px 0' }}>
+              <Spin size="large" />
+              <div style={{ marginTop: 12 }}>
+                <Text type="secondary">正在处理中，请稍候...</Text>
+              </div>
+            </div>
           )}
         </Card>
 
@@ -192,7 +202,7 @@ const VideoStatus = ({ taskData, onReset, onBack }) => {
               <Button
                 type="primary"
                 icon={<DownloadOutlined />}
-                size="large"
+                size="middle"
                 onClick={handleDownload}
                 style={{ marginRight: 12 }}
               >
@@ -227,7 +237,7 @@ const VideoStatus = ({ taskData, onReset, onBack }) => {
             <Button
               type="primary"
               icon={<RedoOutlined />}
-              size="large"
+              size="middle"
               onClick={onReset}
             >
               重新开始

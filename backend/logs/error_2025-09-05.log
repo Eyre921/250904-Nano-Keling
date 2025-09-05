@@ -1,0 +1,36 @@
+2025-09-05 14:23:02 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.61s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.56s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:17 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.57s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:17 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:32:43 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.58s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:32:43 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。

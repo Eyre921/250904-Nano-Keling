@@ -61,14 +61,10 @@ const PromptLibrary = ({ prompts, onUpdate }) => {
       <Button
         icon={<BookOutlined />}
         onClick={() => setModalVisible(true)}
-        style={{ 
-          color: 'white', 
-          borderColor: 'rgba(255,255,255,0.5)',
-          backgroundColor: 'rgba(255,255,255,0.1)'
-        }}
-        ghost
+        type="primary"
+        style={{ width: '100%' }}
       >
-        提示词库
+        查看和编辑提示词库
       </Button>
       
       <Modal

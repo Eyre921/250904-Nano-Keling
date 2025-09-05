@@ -120,7 +120,7 @@ def call_ai_service_with_retry(url: str, headers: Dict[str, str], payload: Dict[
         try:
             logger.info(f"Calling AI service: {url} (attempt {attempt + 1}/{max_retries + 1})")
             # 禁用SSL验证以支持代理
-            response = requests.post(url, headers=headers, json=payload, proxies=proxies, timeout=60, verify=False)
+            response = requests.post(url, headers=headers, json=payload, proxies=proxies, timeout=120, verify=False)
             
             response_time = time.time() - start_time
             log_ai_service_call("unknown", url, response.status_code, response_time)
@@ -339,7 +339,7 @@ def query_multi_image_video_task(service_id: str, access_key: str, secret_key: s
     
     # 发送GET请求
     try:
-        response = requests.get(url, headers=headers, timeout=30)
+        response = requests.get(url, headers=headers, timeout=120)
     except requests.exceptions.RequestException as e:
         raise AIServiceError(500, f"网络请求失败: {str(e)}")
     
@@ -468,7 +468,7 @@ def query_video_task(service_id: str, access_key: str, secret_key: str, task_id:
     
     # 发送GET请求
     try:
-        response = requests.get(url, headers=headers, timeout=30)
+        response = requests.get(url, headers=headers, timeout=120)
     except requests.exceptions.RequestException as e:
         raise AIServiceError(500, f"网络请求失败: {str(e)}")
     

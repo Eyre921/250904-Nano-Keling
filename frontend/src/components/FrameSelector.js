@@ -292,8 +292,13 @@ const FrameSelector = ({ processedImages, onFramesSelected, onBack }) => {
           </Row>
         </Card>
 
-        {/* 图片库筛选 */}
-        <Card title="从图片库选择" style={{ marginBottom: 24 }}>
+        {/* 从图片库选择卡片 */}
+        <Card 
+          title="从图片库选择" 
+          hoverable 
+          className="selection-card"
+          style={{ marginBottom: 24 }}
+        >
           <Row gutter={16} style={{ marginBottom: 16 }}>
             <Col span={12}>
               <Search

@@ -1,0 +1,1274 @@
+2025-09-05 13:12:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:12:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:12:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:12:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:12:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:12:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:12:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:12:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:12:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:12:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:12:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:12:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:14:11 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:14:11 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:14:11 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:14:23 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.20s
+2025-09-05 13:14:23 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.22s
+2025-09-05 13:14:23 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:14:23 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:14:23 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:14:36 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.18s
+2025-09-05 13:14:36 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.19s
+2025-09-05 13:17:57 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:17:57 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:17:57 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:17:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:17:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:17:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:18:04 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:18:04 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:18:04 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:18:04 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:18:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:18:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:18:09 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:18:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:18:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:18:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:18:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:18:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:18:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:18:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:18:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:18:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:18:20 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:18:20 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:18:20 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:19:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:19:14 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:19:14 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:19:14 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:19:20 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:11 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:19 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:20 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:20:27 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:20:28 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:20:28 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:20:28 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:23:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:23:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:23:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:23:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:23:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:23:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:23:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:23:58 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:24:25 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:25:25 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:25:50 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:25:50 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:25:50 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:26:02 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.72s
+2025-09-05 13:26:02 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.73s
+2025-09-05 13:26:02 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:26:02 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:26:02 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:26:13 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.39s
+2025-09-05 13:26:13 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.40s
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:27:50 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:28:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:28:04 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:28:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:28:18 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:28:18 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:28:18 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:28:29 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.19s
+2025-09-05 13:28:29 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.20s
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:30:24 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:30:40 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:30:40 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 504996}
+2025-09-05 13:30:40 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:30:52 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.86s
+2025-09-05 13:30:52 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.91s
+2025-09-05 13:30:52 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:30:52 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 543012}
+2025-09-05 13:30:52 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:31:04 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.77s
+2025-09-05 13:31:04 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.80s
+2025-09-05 13:31:04 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:31:04 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 543012}
+2025-09-05 13:31:04 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:31:16 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.48s
+2025-09-05 13:31:16 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.52s
+2025-09-05 13:31:16 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:31:16 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 543012}
+2025-09-05 13:31:16 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:31:28 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.38s
+2025-09-05 13:31:28 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.42s
+2025-09-05 13:31:28 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:31:28 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 543012}
+2025-09-05 13:31:28 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:31:39 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.27s
+2025-09-05 13:31:39 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.31s
+2025-09-05 13:31:39 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:31:39 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 504996}
+2025-09-05 13:31:39 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:31:50 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 10.86s
+2025-09-05 13:31:50 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 10.90s
+2025-09-05 13:31:50 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:31:50 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 435128}
+2025-09-05 13:31:50 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:32:02 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.04s
+2025-09-05 13:32:02 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.07s
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:32:22 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:32:38 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:32:38 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 435128}
+2025-09-05 13:32:38 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:32:52 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.49s
+2025-09-05 13:32:52 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.52s
+2025-09-05 13:32:52 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:32:52 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 504996}
+2025-09-05 13:32:52 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:33:03 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.25s
+2025-09-05 13:33:03 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.28s
+2025-09-05 13:33:03 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:33:03 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 504996}
+2025-09-05 13:33:03 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:33:16 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.36s
+2025-09-05 13:33:16 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.39s
+2025-09-05 13:33:16 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:33:16 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 543012}
+2025-09-05 13:33:16 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:33:29 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.18s
+2025-09-05 13:33:29 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.22s
+2025-09-05 13:33:29 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:33:29 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 543012}
+2025-09-05 13:33:29 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:33:41 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.65s
+2025-09-05 13:33:41 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.70s
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:34:31 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:34:32 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:34:32 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:34:32 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:35:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:36:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:36:11 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:36:11 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:36:11 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:37:53 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:37:53 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:37:53 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:37:53 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:37:53 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:37:53 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:37:54 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:37:54 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:37:54 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:37:54 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:37:54 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:37:54 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:38:29 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:38:29 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:38:29 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:38:39 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 10.69s
+2025-09-05 13:38:39 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 10.70s
+2025-09-05 13:38:39 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:38:39 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:38:39 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:39:01 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 21.06s
+2025-09-05 13:39:01 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 21.07s
+2025-09-05 13:39:01 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:39:01 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:39:01 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:39:12 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.08s
+2025-09-05 13:39:12 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.09s
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:41:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:45:18 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:45:24 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:45:24 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:45:24 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:45:37 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.78s
+2025-09-05 13:45:37 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.79s
+2025-09-05 13:45:37 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:45:37 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:45:37 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:45:51 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.81s
+2025-09-05 13:45:51 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.83s
+2025-09-05 13:45:51 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:45:51 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:45:51 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:46:03 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.30s
+2025-09-05 13:46:03 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.31s
+2025-09-05 13:46:40 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:46:40 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:46:40 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:46:40 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:46:40 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:46:40 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:46:41 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:46:41 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:46:41 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:46:41 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:46:41 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:46:41 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:48:05 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:48:05 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:48:05 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:48:06 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:48:46 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:48:46 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:48:46 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:49:00 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.47s
+2025-09-05 13:49:00 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.48s
+2025-09-05 13:49:00 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:49:00 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:49:00 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:49:14 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.73s
+2025-09-05 13:49:14 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.74s
+2025-09-05 13:49:14 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:49:14 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:49:14 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:49:25 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 10.92s
+2025-09-05 13:49:25 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 10.93s
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:08 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:09 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:09 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:09 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:09 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:09 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:09 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:50:16 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:51:56 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:51:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:51:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:51:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:52:01 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:52:01 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:52:01 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:52:01 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:52:01 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:52:01 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:52:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:52:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:52:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:52:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:52:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:52:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:52:10 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:52:10 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:52:10 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:52:22 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 11.17s
+2025-09-05 13:52:22 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 11.18s
+2025-09-05 13:52:22 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:52:22 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:52:22 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:52:36 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.93s
+2025-09-05 13:52:36 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.94s
+2025-09-05 13:52:36 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:52:36 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:52:36 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:52:46 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 10.42s
+2025-09-05 13:52:46 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 10.44s
+2025-09-05 13:53:28 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:53:28 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:53:28 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:53:40 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.21s
+2025-09-05 13:53:40 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.22s
+2025-09-05 13:53:40 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:53:40 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:53:40 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:53:56 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 15.60s
+2025-09-05 13:53:56 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 15.61s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:56:43 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:01 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:57:01 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:57:01 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:57:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:57:12 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 13:59:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 13:59:37 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:59:37 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 13:59:37 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 13:59:50 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.69s
+2025-09-05 13:59:50 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.69s
+2025-09-05 13:59:50 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 13:59:50 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 13:59:50 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 14:00:04 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.50s
+2025-09-05 14:00:04 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.52s
+2025-09-05 14:00:04 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 14:00:04 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 14:00:04 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 14:00:18 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 13.90s
+2025-09-05 14:00:18 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 13.91s
+2025-09-05 14:00:18 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 14:00:18 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 14:00:18 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 14:00:30 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.91s
+2025-09-05 14:00:30 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.92s
+2025-09-05 14:00:31 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 14:00:31 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 14:00:31 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 14:00:45 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 14.40s
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 14.41s
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:00:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:00:46 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:00:46 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:00:46 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:00:46 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:00:46 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:00:46 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:14 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:14 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:14 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:15 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:16 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:44 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:44 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:44 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:44 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:44 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:44 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:06:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:07:06 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:07:06 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:07:06 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:07:06 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:07:06 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:07:06 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:07:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:07:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:07:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:07:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:07:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:07:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:09:12 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:09:12 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:09:12 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:09:13 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:09:49 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:12:42 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:12:42 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:12:42 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:12:43 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:31 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:32 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:47 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:47 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:47 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:48 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:55 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:55 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:55 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:14:55 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:55 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:55 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:56 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:14:56 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:14:56 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:14:56 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:14:56 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:14:56 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:15:30 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:15:31 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:15:31 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:15:31 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:15:38 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:16:18 - ai_video_generator.api - INFO - API Request: POST /video-generate
+2025-09-05 14:16:18 - ai_video_generator.api - INFO - Body: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***', 'prompt': '产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀', 'model_name': 'kling-v2-1', 'start_frame_size': 1224920, 'end_frame_size': 1102752}
+2025-09-05 14:16:18 - ai_video_generator.services - INFO - Calling AI service: https://api-beijing.klingai.com/v1/videos/image2video (attempt 1/5)
+2025-09-05 14:16:20 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://api-beijing.klingai.com/v1/videos/image2video - 200 - 2.17s
+2025-09-05 14:16:20 - ai_video_generator.api - INFO - API Response: /video-generate - 200 - 2.18s
+2025-09-05 14:16:20 - ai_video_generator.api - INFO - Video generation task created: 792826009497792576
+2025-09-05 14:23:01 - ai_video_generator.api - INFO - API Request: GET /video-status/792826009497792576
+2025-09-05 14:23:01 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 14:23:02 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.61s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /video-status/792826009497792576
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 14:23:02 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.56s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 14:23:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 14:23:17 - ai_video_generator.api - INFO - API Request: GET /video-status/792826009497792576
+2025-09-05 14:23:17 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 14:23:17 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.57s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:17 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:23:18 - ai_video_generator.api - INFO - API Request: GET /video-status/792826009497792576
+2025-09-05 14:23:18 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 14:23:19 - ai_video_generator.api - INFO - API Response: /video-status/792826009497792576 - 200 - 0.61s
+2025-09-05 14:32:43 - ai_video_generator.api - INFO - API Request: GET /video-status/792826009497792576
+2025-09-05 14:32:43 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 14:32:43 - ai_video_generator.api - ERROR - API Response: /video-status/792826009497792576 - 401 - 0.58s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:32:43 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 14:32:43 - ai_video_generator.api - INFO - API Request: GET /video-status/792826009497792576
+2025-09-05 14:32:43 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 14:32:44 - ai_video_generator.api - INFO - API Response: /video-status/792826009497792576 - 200 - 0.59s
+2025-09-05 16:03:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:03:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:03:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:03:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:03:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:03:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:03:46 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:03:46 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:03:46 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:03:46 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:03:46 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:03:46 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:06 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:06 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:06 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:06 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:06 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:06 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:08 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:08 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:08 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:08 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:08 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:08 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:09 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:04:38 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:04:39 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:04:39 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:04:39 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:05:18 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:05:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:05:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:05:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:05:19 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:05:19 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:05:19 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:08:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:08:04 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:08:04 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:08:04 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:08:04 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:08:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:08:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:29 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:45 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:46 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:47 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:48 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:48 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:48 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:48 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:48 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:48 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:09:57 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:15:47 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:15:47 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:15:47 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:15:48 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:16:18 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:16:19 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:16:19 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:16:19 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:20:10 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:20:10 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:20:10 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:20:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:20:20 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:20:20 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:20:20 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:21:07 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:22:41 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:22:41 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:22:41 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:23:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:23:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories

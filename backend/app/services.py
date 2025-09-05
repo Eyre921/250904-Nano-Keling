@@ -7,12 +7,17 @@ import urllib3
 from typing import Dict, Any, Optional, Tuple
 from app.config import get_services_config
 from app.logger import get_logger, log_ai_service_call, log_error
+from threading import Lock
 
 # 禁用SSL警告（使用代理时需要）
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # 获取日志器
 logger = get_logger("services")
+
+# JWT Token缓存
+_token_cache = {}
+_token_cache_lock = Lock()
 
 class AIServiceError(Exception):
     """AI服务调用异常"""
@@ -23,19 +28,40 @@ class AIServiceError(Exception):
         super().__init__(f"Code {code}: {message}")
 
 def generate_kling_token(access_key: str, secret_key: str) -> str:
-    """生成可灵AI的JWT Token"""
-    headers = {
-        "alg": "HS256",
-        "typ": "JWT"
-    }
+    """生成可灵AI的JWT Token（带缓存）"""
+    cache_key = f"{access_key}:{secret_key}"
     current_time = int(time.time())
-    payload = {
-        "iss": access_key,
-        "exp": current_time + 1800,  # 30分钟有效期
-        "nbf": current_time - 10  # 开始生效时间，当前时间-10秒
-    }
-    token = jwt.encode(payload, secret_key, algorithm="HS256", headers=headers)
-    return token
+    
+    with _token_cache_lock:
+        # 检查缓存中是否有有效的token
+        if cache_key in _token_cache:
+            cached_token, cached_exp = _token_cache[cache_key]
+            # 如果token还有5分钟以上有效期，直接使用缓存
+            if cached_exp - current_time > 300:  # 5分钟缓冲时间
+                logger.info(f"Using cached JWT token, remaining time: {cached_exp - current_time} seconds")
+                return cached_token
+            else:
+                logger.info("Cached JWT token expired, generating new one")
+                del _token_cache[cache_key]
+        
+        # 生成新的token
+        headers = {
+            "alg": "HS256",
+            "typ": "JWT"
+        }
+        exp_time = current_time + 1800  # 30分钟有效期
+        payload = {
+            "iss": access_key,
+            "exp": exp_time,
+            "nbf": current_time - 10  # 开始生效时间，当前时间-10秒
+        }
+        token = jwt.encode(payload, secret_key, algorithm="HS256", headers=headers)
+        
+        # 缓存新生成的token
+        _token_cache[cache_key] = (token, exp_time)
+        logger.info(f"Generated and cached new JWT token, expires in {1800} seconds")
+        
+        return token
 
 def build_payload(template: Dict[str, Any], data: Dict[str, Any]) -> Dict[str, Any]:
     """构建API请求载荷，替换模板中的占位符"""
@@ -57,14 +83,18 @@ def build_payload(template: Dict[str, Any], data: Dict[str, Any]) -> Dict[str, A
     return replace_placeholders(template, data)
 
 def handle_api_error(response: requests.Response) -> AIServiceError:
-    """处理API错误响应，映射为用户友好的错误信息"""
+    """处理API错误响应，映射为用户友好的错误信息（增强版）"""
     status_code = response.status_code
     
     try:
         error_data = response.json()
         business_code = error_data.get('code', 0)
+        error_message = error_data.get('message', '未知错误')
+        request_id = error_data.get('request_id', 'N/A')
     except:
         business_code = 0
+        error_message = '未知错误'
+        request_id = 'N/A'
     
     # 根据PRD 7.1节的错误码映射表
     error_mappings = {
@@ -83,28 +113,47 @@ def handle_api_error(response: requests.Response) -> AIServiceError:
     
     # 通用错误处理
     if status_code == 401:
-        message = "认证失败: API Key或Token无效，请检查您的设置。"
+        # 详细分析401错误的原因
+        if 'token' in error_message.lower() or 'jwt' in error_message.lower():
+            message = "认证失败: JWT Token无效或已过期。可能原因：1) Token格式错误 2) Token已过期 3) 签名验证失败"
+        elif 'key' in error_message.lower():
+            message = "认证失败: API Key无效。请检查Access Key和Secret Key是否正确"
+        elif 'expired' in error_message.lower():
+            message = "认证失败: 认证信息已过期，请重新生成Token"
+        elif 'signature' in error_message.lower():
+            message = "认证失败: Token签名验证失败，请检查Secret Key是否正确"
+        else:
+            message = f"认证失败: {error_message}。请检查API密钥配置"
     elif status_code == 429:
         if business_code in [1101, 1102]:
             message = error_mappings.get((status_code, business_code), "处理失败: AI服务商提示账户问题。")
         else:
-            message = "处理失败: AI服务繁忙，请稍后再试。"
+            # 分析频率限制的具体原因
+            if 'rate' in error_message.lower():
+                message = f"请求频率限制: {error_message}。建议降低请求频率或稍后重试"
+            else:
+                message = "处理失败: AI服务繁忙，请稍后再试。"
     elif status_code == 403:
-        message = "处理失败: 您的账户无权使用该模型或接口。"
+        message = f"处理失败: 您的账户无权使用该模型或接口。{error_message}"
     elif status_code == 400:
         if business_code == 1301:
             message = "处理失败: 您的图片或提示词可能包含不适宜内容，请修改后重试。"
         else:
-            message = "系统错误: 请求参数不合法，请联系技术支持。"
+            message = f"系统错误: 请求参数不合法 - {error_message}，请联系技术支持。"
+    elif status_code == 404:
+        message = f"资源未找到: {error_message}。请检查任务ID是否正确"
     elif status_code >= 500:
         if status_code == 500:
-            message = "处理失败: AI服务提供商服务器内部错误。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。"
+            message = f"处理失败: AI服务提供商服务器内部错误 - {error_message}。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。"
+        elif status_code in [502, 503]:
+            message = f"服务暂时不可用: {error_message}。请稍后重试"
         else:
-            message = f"处理失败: AI服务提供商服务器错误 (HTTP {status_code})，请稍后再试。"
+            message = f"处理失败: AI服务提供商服务器错误 (HTTP {status_code}) - {error_message}，请稍后再试。"
     else:
-        message = f"处理失败: 未知错误 (HTTP {status_code})"
+        message = f"处理失败: 未知错误 (HTTP {status_code}) - {error_message}"
     
-    return AIServiceError(status_code, message, response.text)
+    details = f"Request ID: {request_id}" if request_id != 'N/A' else response.text
+    return AIServiceError(status_code, message, details)
 
 def call_ai_service_with_retry(url: str, headers: Dict[str, str], payload: Dict[str, Any], max_retries: int = 4) -> requests.Response:
     """带重试机制的AI服务调用"""
@@ -323,8 +372,17 @@ def query_multi_image_video_task(service_id: str, access_key: str, secret_key: s
     if not service_config:
         raise AIServiceError(404, f"未找到服务配置: {service_id}")
     
+    # 优先使用服务配置中的密钥，如果没有则使用传入的密钥
+    config_access_key = service_config.get('access_key', access_key)
+    config_secret_key = service_config.get('secret_key', secret_key)
+    
+    # 调试日志
+    logger.info(f"Query video task - Using access_key: {config_access_key[:8]}...")
+    logger.info(f"Query video task - Using secret_key: {config_secret_key[:8]}...")
+    
     # 生成JWT Token
-    token = generate_kling_token(access_key, secret_key)
+    token = generate_kling_token(config_access_key, config_secret_key)
+    logger.info(f"Generated JWT token: {token[:50]}...")
     
     # 构建请求URL
     base_url = service_config['api_endpoint_base']
@@ -337,14 +395,50 @@ def query_multi_image_video_task(service_id: str, access_key: str, secret_key: s
         'Authorization': f'Bearer {token}'
     }
     
-    # 发送GET请求
-    try:
-        response = requests.get(url, headers=headers, timeout=120)
-    except requests.exceptions.RequestException as e:
-        raise AIServiceError(500, f"网络请求失败: {str(e)}")
+    # 发送GET请求（带重试机制）
+    max_retries = 3
+    retry_delay = 1  # 秒
     
-    if response.status_code != 200:
-        raise handle_api_error(response)
+    for attempt in range(max_retries):
+        try:
+            # 如果是重试，重新生成token（清除缓存）
+            if attempt > 0:
+                logger.info(f"Retry attempt {attempt + 1}/{max_retries} for task {task_id}")
+                # 清除缓存的token，强制生成新的
+                cache_key = f"{config_access_key}:{config_secret_key}"
+                with _token_cache_lock:
+                    if cache_key in _token_cache:
+                        del _token_cache[cache_key]
+                        logger.info("Cleared cached token for retry")
+                
+                # 重新生成token
+                token = generate_kling_token(config_access_key, config_secret_key)
+                headers['Authorization'] = f'Bearer {token}'
+                
+                # 等待一段时间再重试
+                time.sleep(retry_delay * attempt)
+            
+            response = requests.get(url, headers=headers, timeout=120)
+            
+            # 如果是401错误且还有重试次数，继续重试
+            if response.status_code == 401 and attempt < max_retries - 1:
+                logger.warning(f"Got 401 error on attempt {attempt + 1}, will retry")
+                continue
+            
+            # 其他错误或最后一次重试失败，抛出异常
+            if response.status_code != 200:
+                raise handle_api_error(response)
+            
+            # 成功，跳出重试循环
+            if attempt > 0:
+                logger.info(f"Request succeeded on retry attempt {attempt + 1}")
+            break
+            
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries - 1:
+                raise AIServiceError(500, f"网络请求失败: {str(e)}")
+            logger.warning(f"Network error on attempt {attempt + 1}, will retry: {str(e)}")
+            time.sleep(retry_delay * (attempt + 1))
     
     # 解析响应
     try:
@@ -452,8 +546,17 @@ def query_video_task(service_id: str, access_key: str, secret_key: str, task_id:
     if not service_config:
         raise AIServiceError(404, f"未找到服务配置: {service_id}")
     
+    # 优先使用服务配置中的密钥，如果没有则使用传入的密钥
+    config_access_key = service_config.get('access_key', access_key)
+    config_secret_key = service_config.get('secret_key', secret_key)
+    
+    # 调试日志
+    logger.info(f"Query video task - Using access_key: {config_access_key[:8]}...")
+    logger.info(f"Query video task - Using secret_key: {config_secret_key[:8]}...")
+    
     # 生成JWT Token
-    token = generate_kling_token(access_key, secret_key)
+    token = generate_kling_token(config_access_key, config_secret_key)
+    logger.info(f"Generated JWT token: {token[:50]}...")
     
     # 构建请求URL
     base_url = service_config['api_endpoint_base']

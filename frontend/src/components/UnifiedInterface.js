@@ -134,7 +134,7 @@ const UnifiedInterface = () => {
               size="small"
               style={{ marginBottom: 16 }}
             >
-             <UnifiedImageProcessor services={services.image_services} onImageProcess={handleImageProcess} />
+             <UnifiedImageProcessor services={services.image_services} onProcess={handleImageProcess} />
            </Card>
 
           {/* 视频生成区域（内嵌首尾帧选择） */}

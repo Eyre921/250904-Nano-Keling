@@ -42,7 +42,7 @@ class MultiImageVideoGenerateRequest(BaseModel):
 class VideoStatusResponse(BaseModel):
     """视频状态响应模型"""
     task_id: str
-    status: str  # "processing", "succeeded", "failed"
+    status: str  # "processing", "succeed", "failed"
     video_url: Optional[str] = None
     error_message: Optional[str] = None
 

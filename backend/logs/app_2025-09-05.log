@@ -1272,3 +1272,462 @@ app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请
 2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Request: GET /prompts
 2025-09-05 16:23:04 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
 2025-09-05 16:23:04 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:58:44 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:59:02 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:59:02 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:59:02 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:59:02 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:59:02 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:59:02 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:59:03 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:59:03 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:59:03 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:59:03 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:59:03 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:59:03 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 16:59:26 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 16:59:41 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 16:59:41 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 16:59:41 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 16:59:53 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.13s
+2025-09-05 16:59:53 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.15s
+2025-09-05 17:00:52 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:00:52 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:00:52 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:00:52 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:00:52 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:00:52 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:01:28 - ai_video_generator.api - INFO - API Request: POST /video-generate
+2025-09-05 17:01:28 - ai_video_generator.api - INFO - Body: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***', 'prompt': '产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀', 'model_name': 'kling-v2-1', 'start_frame_size': 1224920, 'end_frame_size': 1102752}
+2025-09-05 17:01:28 - ai_video_generator.services - INFO - Calling AI service: https://api-beijing.klingai.com/v1/videos/image2video (attempt 1/5)
+2025-09-05 17:01:30 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://api-beijing.klingai.com/v1/videos/image2video - 200 - 2.19s
+2025-09-05 17:01:30 - ai_video_generator.api - INFO - API Response: /video-generate - 200 - 2.19s
+2025-09-05 17:01:30 - ai_video_generator.api - INFO - Video generation task created: 792867572114272265
+2025-09-05 17:01:30 - ai_video_generator.api - INFO - API Request: GET /video-status/792867572114272265
+2025-09-05 17:01:30 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:01:31 - ai_video_generator.api - ERROR - API Response: /video-status/792867572114272265 - 401 - 0.79s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:01:31 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:01:31 - ai_video_generator.api - INFO - API Request: GET /video-status/792867572114272265
+2025-09-05 17:01:31 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:01:32 - ai_video_generator.api - INFO - API Response: /video-status/792867572114272265 - 200 - 0.82s
+2025-09-05 17:06:25 - ai_video_generator.api - INFO - API Request: GET /video-status/792867572114272265
+2025-09-05 17:06:25 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:06:26 - ai_video_generator.api - INFO - API Response: /video-status/792867572114272265 - 200 - 0.66s
+2025-09-05 17:06:26 - ai_video_generator.api - INFO - API Request: GET /video-status/792867572114272265
+2025-09-05 17:06:26 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:06:26 - ai_video_generator.api - ERROR - API Response: /video-status/792867572114272265 - 401 - 0.54s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:06:26 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:06:52 - ai_video_generator.api - INFO - API Request: GET /video-status/792867572114272265
+2025-09-05 17:06:52 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:06:53 - ai_video_generator.api - INFO - API Response: /video-status/792867572114272265 - 200 - 0.58s
+2025-09-05 17:06:53 - ai_video_generator.api - INFO - API Request: GET /video-status/792867572114272265
+2025-09-05 17:06:53 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:06:54 - ai_video_generator.api - ERROR - API Response: /video-status/792867572114272265 - 401 - 0.57s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:06:54 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:07:33 - ai_video_generator.api - INFO - API Request: POST /video-generate
+2025-09-05 17:07:33 - ai_video_generator.api - INFO - Body: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***', 'prompt': '产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀', 'model_name': 'kling-v2-1', 'start_frame_size': 1224920, 'end_frame_size': 1102752}
+2025-09-05 17:07:33 - ai_video_generator.services - INFO - Calling AI service: https://api-beijing.klingai.com/v1/videos/image2video (attempt 1/5)
+2025-09-05 17:07:35 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://api-beijing.klingai.com/v1/videos/image2video - 200 - 2.15s
+2025-09-05 17:07:35 - ai_video_generator.api - INFO - API Response: /video-generate - 200 - 2.16s
+2025-09-05 17:07:35 - ai_video_generator.api - INFO - Video generation task created: 792869102943117320
+2025-09-05 17:07:35 - ai_video_generator.api - INFO - API Request: GET /video-status/792869102943117320
+2025-09-05 17:07:35 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:07:36 - ai_video_generator.api - INFO - API Response: /video-status/792869102943117320 - 200 - 0.79s
+2025-09-05 17:07:36 - ai_video_generator.api - INFO - API Request: GET /video-status/792869102943117320
+2025-09-05 17:07:36 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:07:37 - ai_video_generator.api - ERROR - API Response: /video-status/792869102943117320 - 401 - 0.67s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:07:37 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:07:37 - ai_video_generator.api - INFO - API Request: GET /video-status/792869102943117320
+2025-09-05 17:07:37 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:07:38 - ai_video_generator.api - ERROR - API Response: /video-status/792869102943117320 - 401 - 0.67s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:07:38 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 476, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:10:19 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:10:19 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:10:19 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:10:19 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:10:19 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:10:19 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:10:21 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:10:21 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:10:21 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:10:21 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:10:21 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:10:21 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:10:27 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 17:10:27 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 107028}
+2025-09-05 17:10:27 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 17:10:41 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 14.13s
+2025-09-05 17:10:41 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 14.14s
+2025-09-05 17:10:41 - ai_video_generator.api - INFO - API Request: POST /image-process
+2025-09-05 17:10:41 - ai_video_generator.api - INFO - Body: {'service_id': 'nano_banana_remove_bg_v1', 'api_key': '***', 'mime_type': 'image/jpeg', 'image_size': 170728}
+2025-09-05 17:10:41 - ai_video_generator.services - INFO - Calling AI service: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 (attempt 1/5)
+2025-09-05 17:10:54 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=AIzaSyAzTyItlAqQazqV8HorekORPhWtx22Me30 - 200 - 12.30s
+2025-09-05 17:10:54 - ai_video_generator.api - INFO - API Response: /image-process - 200 - 12.31s
+2025-09-05 17:11:08 - ai_video_generator.api - INFO - API Request: POST /video-generate
+2025-09-05 17:11:08 - ai_video_generator.api - INFO - Body: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***', 'prompt': '产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀', 'model_name': 'kling-v1', 'start_frame_size': 1224920, 'end_frame_size': 1102752}
+2025-09-05 17:11:08 - ai_video_generator.services - INFO - Calling AI service: https://api-beijing.klingai.com/v1/videos/image2video (attempt 1/5)
+2025-09-05 17:11:10 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://api-beijing.klingai.com/v1/videos/image2video - 200 - 2.06s
+2025-09-05 17:11:10 - ai_video_generator.api - INFO - API Response: /video-generate - 200 - 2.06s
+2025-09-05 17:11:10 - ai_video_generator.api - INFO - Video generation task created: 792870006798848018
+2025-09-05 17:11:10 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:10 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:11 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.68s
+2025-09-05 17:11:11 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:11 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:12 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.71s
+2025-09-05 17:11:12 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:12 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:13 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.79s
+2025-09-05 17:11:13 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:13 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:14 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.76s
+2025-09-05 17:11:23 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:23 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:24 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.68s
+2025-09-05 17:11:33 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:33 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:34 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.72s
+2025-09-05 17:11:43 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:43 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:44 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.67s
+2025-09-05 17:11:53 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:11:53 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:11:54 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.64s
+2025-09-05 17:12:03 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:12:03 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:12:04 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.74s
+2025-09-05 17:12:13 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:12:13 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:12:14 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.64s
+2025-09-05 17:12:23 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:12:23 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:12:24 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.71s
+2025-09-05 17:12:33 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:12:33 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:12:34 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.66s
+2025-09-05 17:12:43 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:12:43 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:12:44 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.68s
+2025-09-05 17:12:53 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:12:53 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:12:57 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 3.46s
+2025-09-05 17:13:03 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:13:03 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:13:04 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.80s
+2025-09-05 17:13:13 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:13:13 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:13:14 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.68s
+2025-09-05 17:13:23 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:13:23 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:13:24 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.67s
+2025-09-05 17:13:33 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:13:33 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:13:34 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.71s
+2025-09-05 17:13:43 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:13:43 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:13:44 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.84s
+2025-09-05 17:13:53 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:13:53 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:13:54 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.65s
+2025-09-05 17:14:03 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:14:03 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:14:04 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.76s
+2025-09-05 17:14:13 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:14:13 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:14:14 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.72s
+2025-09-05 17:14:23 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:14:23 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:14:24 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.67s
+2025-09-05 17:14:33 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:14:33 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:14:34 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.67s
+2025-09-05 17:14:43 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:14:43 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:14:44 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.65s
+2025-09-05 17:14:53 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:14:53 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:14:54 - ai_video_generator.api - INFO - API Response: /video-status/792870006798848018 - 200 - 0.54s
+2025-09-05 17:15:03 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:15:03 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:15:04 - ai_video_generator.api - ERROR - API Response: /video-status/792870006798848018 - 401 - 0.52s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:04 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 484, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:13 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:15:13 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:15:14 - ai_video_generator.api - ERROR - API Response: /video-status/792870006798848018 - 401 - 0.54s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:14 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 484, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:50 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:15:50 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:15:50 - ai_video_generator.api - ERROR - API Response: /video-status/792870006798848018 - 401 - 0.56s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:50 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 484, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:54 - ai_video_generator.api - INFO - API Request: GET /video-status/792870006798848018
+2025-09-05 17:15:54 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:15:55 - ai_video_generator.api - ERROR - API Response: /video-status/792870006798848018 - 401 - 0.76s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:15:55 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 484, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:19:05 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Request: GET /prompts
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Response: /prompts - 200 - 0.00s
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - Retrieved prompts data with 1 categories
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Request: GET /services
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - API Response: /services - 200 - 0.00s
+2025-09-05 17:19:06 - ai_video_generator.api - INFO - Retrieved 1 image services and 2 video services
+2025-09-05 17:19:16 - ai_video_generator.api - INFO - API Request: POST /video-generate
+2025-09-05 17:19:16 - ai_video_generator.api - INFO - Body: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***', 'prompt': '产品缓慢旋转360度，展示各个角度的细节，背景保持简洁，光线柔和均匀', 'model_name': 'kling-v1', 'start_frame_size': 1224920, 'end_frame_size': 1102752}
+2025-09-05 17:19:16 - ai_video_generator.services - INFO - Calling AI service: https://api-beijing.klingai.com/v1/videos/image2video (attempt 1/5)
+2025-09-05 17:19:18 - ai_video_generator.ai_service - INFO - AI Service Call: unknown - https://api-beijing.klingai.com/v1/videos/image2video - 200 - 2.23s
+2025-09-05 17:19:18 - ai_video_generator.api - INFO - API Response: /video-generate - 200 - 2.24s
+2025-09-05 17:19:18 - ai_video_generator.api - INFO - Video generation task created: 792872054319501352
+2025-09-05 17:19:19 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:19:19 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:19:19 - ai_video_generator.api - ERROR - API Response: /video-status/792872054319501352 - 401 - 0.66s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:19:19 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 484, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:19:19 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:19:19 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:19:20 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.80s
+2025-09-05 17:28:19 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:28:19 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:28:19 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:28:19 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:28:19 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:28:20 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.58s
+2025-09-05 17:28:22 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:28:22 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:28:22 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:28:22 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:28:22 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:28:22 - ai_video_generator.api - ERROR - API Response: /video-status/792872054319501352 - 401 - 0.53s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:28:22 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 494, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:28:25 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:28:25 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:28:25 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:28:25 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:28:25 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:28:26 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.54s
+2025-09-05 17:28:29 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:28:29 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:28:29 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:28:29 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:28:29 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:28:30 - ai_video_generator.api - ERROR - API Response: /video-status/792872054319501352 - 401 - 0.52s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:28:30 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 494, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:28:33 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:28:33 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:28:33 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:28:33 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:28:33 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:28:33 - ai_video_generator.api - ERROR - API Response: /video-status/792872054319501352 - 401 - 0.54s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:28:33 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 494, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:28:36 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:28:36 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:28:36 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:28:36 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:28:36 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:28:37 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.52s
+2025-09-05 17:29:58 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:29:58 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:29:58 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:29:58 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:29:58 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:29:59 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.57s
+2025-09-05 17:30:06 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:30:06 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:30:06 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:30:06 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:30:06 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:30:06 - ai_video_generator.api - ERROR - API Response: /video-status/792872054319501352 - 401 - 0.53s - Error: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:30:06 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 494, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: API Key或Token无效，请检查您的设置。
+2025-09-05 17:30:13 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:30:13 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:30:13 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:30:13 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:30:13 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:30:14 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.52s
+2025-09-05 17:37:22 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:37:22 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:37:22 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:37:22 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:37:22 - ai_video_generator.services - INFO - Generated and cached new JWT token, expires in 1800 seconds
+2025-09-05 17:37:22 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:37:22 - ai_video_generator.api - ERROR - API Response: /video-status/792872054319501352 - 401 - 0.50s - Error: Code 401: 认证失败: Authorization is not active。请检查API密钥配置
+2025-09-05 17:37:22 - ai_video_generator.error - ERROR - Error in video status query: Code 401: 认证失败: Authorization is not active。请检查API密钥配置
+Traceback (most recent call last):
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\api.py", line 169, in get_video_status_endpoint
+    result = query_video_task(
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Eyre\Desktop\items\000000-Juxiang\250904-Nano+Keling\backend\app\services.py", line 579, in query_video_task
+    raise handle_api_error(response)
+app.services.AIServiceError: Code 401: 认证失败: Authorization is not active。请检查API密钥配置
+2025-09-05 17:37:24 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:37:24 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:37:24 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:37:24 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:37:24 - ai_video_generator.services - INFO - Using cached JWT token, remaining time: 1798 seconds
+2025-09-05 17:37:24 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:37:25 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.53s
+2025-09-05 17:37:28 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:37:28 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:37:28 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:37:28 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:37:28 - ai_video_generator.services - INFO - Using cached JWT token, remaining time: 1794 seconds
+2025-09-05 17:37:28 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:37:29 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.54s
+2025-09-05 17:37:32 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:37:32 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:37:32 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:37:32 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:37:32 - ai_video_generator.services - INFO - Using cached JWT token, remaining time: 1790 seconds
+2025-09-05 17:37:32 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:37:32 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.53s
+2025-09-05 17:37:35 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:37:35 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:37:35 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:37:35 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:37:35 - ai_video_generator.services - INFO - Using cached JWT token, remaining time: 1787 seconds
+2025-09-05 17:37:35 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:37:36 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.50s
+2025-09-05 17:37:39 - ai_video_generator.api - INFO - API Request: GET /video-status/792872054319501352
+2025-09-05 17:37:39 - ai_video_generator.api - INFO - Params: {'service_id': 'kling_image2video_v1', 'access_key': '***', 'secret_key': '***'}
+2025-09-05 17:37:39 - ai_video_generator.services - INFO - Query video task - Using access_key: AMM8mCR8...
+2025-09-05 17:37:39 - ai_video_generator.services - INFO - Query video task - Using secret_key: QHTNTLLL...
+2025-09-05 17:37:39 - ai_video_generator.services - INFO - Using cached JWT token, remaining time: 1783 seconds
+2025-09-05 17:37:39 - ai_video_generator.services - INFO - Generated JWT token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBT...
+2025-09-05 17:37:39 - ai_video_generator.api - INFO - API Response: /video-status/792872054319501352 - 200 - 0.55s

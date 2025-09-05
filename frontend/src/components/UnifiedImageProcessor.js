@@ -79,10 +79,13 @@ const UnifiedImageProcessor = ({ services, onProcess }) => {
     }
 
     setProcessing(true);
+    setCurrentIndex(0);
+    setProgress(0);
     let tempProcessedImages = [...processedImages];
     
     for (let i = 0; i < images.length; i++) {
       const imageToProcess = images[i];
+      setCurrentIndex(i + 1);
       
       try {
         const response = await fetch('/api/image-process', {
@@ -118,6 +121,9 @@ const UnifiedImageProcessor = ({ services, onProcess }) => {
           }
           tempProcessedImages[batchIndex] = processedImage;
           
+          // 实时更新处理结果
+          setProcessedImages([...tempProcessedImages]);
+          
           message.success(`成功处理图片: ${imageToProcess.name}`);
         } else {
           message.error(`处理图片 ${imageToProcess.name} 失败`);
@@ -125,10 +131,16 @@ const UnifiedImageProcessor = ({ services, onProcess }) => {
       } catch (error) {
         message.error(`处理图片 ${imageToProcess.name} 时发生错误`);
       }
+      
+      // 更新进度
+      const progressPercent = Math.round(((i + 1) / images.length) * 100);
+      setProgress(progressPercent);
     }
 
-    // 更新状态
-    setProcessedImages(tempProcessedImages);
+    // 处理完成，重置状态
+    setProcessing(false);
+    setCurrentIndex(0);
+    setProgress(100);
     
     // 检查是否有足够的处理结果可以传递给父组件
     const validResults = tempProcessedImages.filter(img => img !== null);
@@ -160,8 +172,37 @@ const UnifiedImageProcessor = ({ services, onProcess }) => {
       };
       onProcess(processedImage, processedImage);
     }
-
-    setProcessing(false);
+    
+    // 将处理完成的图片保存到图片库
+    if (validResults.length > 0) {
+      const existingImages = JSON.parse(localStorage.getItem('processedImages') || '[]');
+      const newImages = validResults.map(img => ({
+        id: `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        name: img.name,
+        base64: img.base64,
+        mimeType: img.mimeType,
+        processed_base64: img.processed_base64,
+        processed_mime_type: img.processed_mime_type,
+        addedAt: new Date().toISOString(),
+        tags: ['AI处理', '背景移除']
+      }));
+      
+      // 避免重复添加相同的图片
+      const filteredNewImages = newImages.filter(newImg => 
+        !existingImages.some(existingImg => 
+          existingImg.name === newImg.name && 
+          existingImg.processed_base64 === newImg.processed_base64
+        )
+      );
+      
+      if (filteredNewImages.length > 0) {
+        const updatedImages = [...existingImages, ...filteredNewImages];
+        localStorage.setItem('processedImages', JSON.stringify(updatedImages));
+      }
+    }
+    
+    // 显示完成消息
+    message.success(`批量处理完成！成功处理 ${validResults.length}/${images.length} 张图片`);
   };
 
   const handleManualProcess = () => {

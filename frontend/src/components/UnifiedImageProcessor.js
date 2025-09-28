@@ -173,34 +173,6 @@ const UnifiedImageProcessor = ({ services, onProcess }) => {
       onProcess(processedImage, processedImage);
     }
     
-    // 将处理完成的图片保存到图片库
-    if (validResults.length > 0) {
-      const existingImages = JSON.parse(localStorage.getItem('processedImages') || '[]');
-      const newImages = validResults.map(img => ({
-        id: `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-        name: img.name,
-        base64: img.base64,
-        mimeType: img.mimeType,
-        processed_base64: img.processed_base64,
-        processed_mime_type: img.processed_mime_type,
-        addedAt: new Date().toISOString(),
-        tags: ['AI处理', '背景移除']
-      }));
-      
-      // 避免重复添加相同的图片
-      const filteredNewImages = newImages.filter(newImg => 
-        !existingImages.some(existingImg => 
-          existingImg.name === newImg.name && 
-          existingImg.processed_base64 === newImg.processed_base64
-        )
-      );
-      
-      if (filteredNewImages.length > 0) {
-        const updatedImages = [...existingImages, ...filteredNewImages];
-        localStorage.setItem('processedImages', JSON.stringify(updatedImages));
-      }
-    }
-    
     // 显示完成消息
     message.success(`批量处理完成！成功处理 ${validResults.length}/${images.length} 张图片`);
   };

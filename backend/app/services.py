@@ -83,18 +83,14 @@ def build_payload(template: Dict[str, Any], data: Dict[str, Any]) -> Dict[str, A
     return replace_placeholders(template, data)
 
 def handle_api_error(response: requests.Response) -> AIServiceError:
-    """处理API错误响应，映射为用户友好的错误信息（增强版）"""
+    """处理API错误响应，映射为用户友好的错误信息"""
     status_code = response.status_code
     
     try:
         error_data = response.json()
         business_code = error_data.get('code', 0)
-        error_message = error_data.get('message', '未知错误')
-        request_id = error_data.get('request_id', 'N/A')
     except:
         business_code = 0
-        error_message = '未知错误'
-        request_id = 'N/A'
     
     # 根据PRD 7.1节的错误码映射表
     error_mappings = {
@@ -113,47 +109,28 @@ def handle_api_error(response: requests.Response) -> AIServiceError:
     
     # 通用错误处理
     if status_code == 401:
-        # 详细分析401错误的原因
-        if 'token' in error_message.lower() or 'jwt' in error_message.lower():
-            message = "认证失败: JWT Token无效或已过期。可能原因：1) Token格式错误 2) Token已过期 3) 签名验证失败"
-        elif 'key' in error_message.lower():
-            message = "认证失败: API Key无效。请检查Access Key和Secret Key是否正确"
-        elif 'expired' in error_message.lower():
-            message = "认证失败: 认证信息已过期，请重新生成Token"
-        elif 'signature' in error_message.lower():
-            message = "认证失败: Token签名验证失败，请检查Secret Key是否正确"
-        else:
-            message = f"认证失败: {error_message}。请检查API密钥配置"
+        message = "认证失败: API Key或Token无效，请检查您的设置。"
     elif status_code == 429:
         if business_code in [1101, 1102]:
             message = error_mappings.get((status_code, business_code), "处理失败: AI服务商提示账户问题。")
         else:
-            # 分析频率限制的具体原因
-            if 'rate' in error_message.lower():
-                message = f"请求频率限制: {error_message}。建议降低请求频率或稍后重试"
-            else:
-                message = "处理失败: AI服务繁忙，请稍后再试。"
+            message = "处理失败: AI服务繁忙，请稍后再试。"
     elif status_code == 403:
-        message = f"处理失败: 您的账户无权使用该模型或接口。{error_message}"
+        message = "处理失败: 您的账户无权使用该模型或接口。"
     elif status_code == 400:
         if business_code == 1301:
             message = "处理失败: 您的图片或提示词可能包含不适宜内容，请修改后重试。"
         else:
-            message = f"系统错误: 请求参数不合法 - {error_message}，请联系技术支持。"
-    elif status_code == 404:
-        message = f"资源未找到: {error_message}。请检查任务ID是否正确"
+            message = "系统错误: 请求参数不合法，请联系技术支持。"
     elif status_code >= 500:
         if status_code == 500:
-            message = f"处理失败: AI服务提供商服务器内部错误 - {error_message}。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。"
-        elif status_code in [502, 503]:
-            message = f"服务暂时不可用: {error_message}。请稍后重试"
+            message = "处理失败: AI服务提供商服务器内部错误。这通常是临时问题，请等待几分钟后重试。如果问题持续存在，请联系技术支持。"
         else:
-            message = f"处理失败: AI服务提供商服务器错误 (HTTP {status_code}) - {error_message}，请稍后再试。"
+            message = f"处理失败: AI服务提供商服务器错误 (HTTP {status_code})，请稍后再试。"
     else:
-        message = f"处理失败: 未知错误 (HTTP {status_code}) - {error_message}"
+        message = f"处理失败: 未知错误 (HTTP {status_code})"
     
-    details = f"Request ID: {request_id}" if request_id != 'N/A' else response.text
-    return AIServiceError(status_code, message, details)
+    return AIServiceError(status_code, message, response.text)
 
 def call_ai_service_with_retry(url: str, headers: Dict[str, str], payload: Dict[str, Any], max_retries: int = 4) -> requests.Response:
     """带重试机制的AI服务调用"""

@@ -97,61 +97,26 @@ const VideoStatus = ({ taskData, onReset, onBack }) => {
   };
 
   const getStatusInfo = () => {
-    const formatLastQueryTime = () => {
-      if (!lastQueryTime) return '';
-      return lastQueryTime.toLocaleTimeString();
-    };
-
     switch (status) {
       case 'processing':
-        const nextQueryText = autoRefresh && countdown > 0 
-          ? `下次查询倒计时: ${countdown}秒` 
-          : autoRefresh 
-            ? '正在查询中...' 
-            : '自动查询已暂停';
-        
         return {
           type: 'info',
           title: '正在生成视频...',
-          description: (
-            <div>
-              <div>请耐心等待，视频生成通常需要1-3分钟。系统每10秒自动查询一次状态，如遇临时错误会自动重试。</div>
-              <div style={{ marginTop: 8, fontSize: '12px', color: '#666' }}>
-                <div>已查询 {queryCount} 次 {lastQueryTime && `| 上次查询: ${formatLastQueryTime()}`}</div>
-                <div style={{ marginTop: 4, fontWeight: 'bold', color: autoRefresh ? '#1890ff' : '#999' }}>
-                  {nextQueryText}
-                </div>
-              </div>
-            </div>
-          ),
+          description: '请耐心等待，视频生成通常需要1-3分钟。系统每10秒自动查询一次状态，如遇临时错误会自动重试。',
           showSpinner: true
         };
       case 'succeed':
         return {
           type: 'success',
           title: '视频生成完成！',
-          description: (
-            <div>
-              <div>您的商品展示视频已成功生成</div>
-              <div style={{ marginTop: 8, fontSize: '12px', color: '#666' }}>
-                总共查询了 {queryCount} 次 {lastQueryTime && `| 完成时间: ${formatLastQueryTime()}`}
-              </div>
-            </div>
-          ),
+          description: '您的商品展示视频已成功生成',
           showSpinner: false
         };
       case 'failed':
         return {
           type: 'error',
           title: '视频生成失败',
-          description: (
-            <div>
-              <div>{error || '生成过程中出现错误，请重试'}</div>
-              <div style={{ marginTop: 8, fontSize: '12px', color: '#666' }}>
-                查询了 {queryCount} 次 {lastQueryTime && `| 失败时间: ${formatLastQueryTime()}`}
-              </div>
-            </div>
-          ),
+          description: error || '生成过程中出现错误，请重试',
           showSpinner: false
         };
       default:
